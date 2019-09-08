@@ -1,3 +1,16 @@
+// YOU MUST NOT REMOVE THIS LINE!
+/// <reference path="imgs.d.ts"/>
+
+// The images to insert into reports page.
+import headerLevelLeftImg from './assets/headerImg1.png'
+
+export default {
+  'header-level-left-img': {
+    setAs: 'imgsrc',
+    imagePath: headerLevelLeftImg
+  }
+}
+
 /**
   imgs.ts - readme
 
@@ -24,16 +37,3 @@
 
         import imgPath from 'path'
 */
-
-// YOU MUST NOT REMOVE THIS LINE!
-/// <reference path="imgs.d.ts"/>
-
-// The images to insert into reports page.
-import headerLevelLeftImg from './assets/headerImg1.png'
-
-export default {
-  'header-level-left-img': {
-    setAs: 'bg',
-    imagePath: headerLevelLeftImg
-  }
-}

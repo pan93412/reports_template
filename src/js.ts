@@ -1,14 +1,24 @@
 // Load images database.
 import img from './imgs'
 
-interface imageObject {
-  [key: string]: string
+interface imageObjectMeta {
+  setAs: string
+  imagePath: string
 }
 
-function applyImgsToPage <T extends imageObject> (imgObject: T): void {
-  for (const img in imgObject) {
-    const elem: HTMLElement = document.querySelector('.' + img)
-    elem.setAttribute('src', imgObject[img])
+interface imageObject {
+  [key: string]: imageObjectMeta
+}
+
+function applyImgsToPage (imgObject: imageObject): void {
+  for (let imgClass in imgObject) {
+    let elem: HTMLElement = document.querySelector('.' + imgClass)
+    
+    if (imgObject[imgClass].setAs === 'imgsrc') {
+      elem.setAttribute('src', imgObject[imgClass].imagePath)
+    } else {
+      throw new Error("ERROR: We don't support the such things like " + imgObject[imgClass].setAs);
+    }
   }
 }
 
