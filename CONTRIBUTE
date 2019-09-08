@@ -11,7 +11,7 @@ like this:
     [long messages (optional)]
 
 kinds: 
-   like 'feature', 'bug', 'l10n',
+   like 'feat', 'bug', 'l10n',
         and such things.
 short messages:
     describe what the commit does.
