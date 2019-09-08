@@ -1,4 +1,16 @@
-# a template of reports
+# A template of reports
+## Usage
+```bash
+# to build
+$ yarn build
+
+# to build as production
+$ yarn build:prod
+
+# to start webpack dev server
+$ yarn start
+```
+
 ## Supports
 The latest version of Chrome or Firefox,
 and the minimum supports of Internet Explorer,
