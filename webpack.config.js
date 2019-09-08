@@ -64,9 +64,12 @@ module.exports = {
 			},
 			{
 				test: /\.pug$/,
-				loader: [
-					'pug-loader'
-				]
+				loader: 'pug-loader'
+			},
+			// Images
+			{
+				test: /\.(jpg|png|gif)$/,
+				loader: 'file-loader'
 			}
 		]
 	},
@@ -93,7 +96,11 @@ module.exports = {
 	},
 
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js', '.json', '.css'],
+		extensions: [
+			'.ts', '.js',
+			'.json', '.css',
+			'.jpg', '.png'
+		],
 		alias: {
 			libs: path.resolve(__dirname, 'src/libs')
 		}
