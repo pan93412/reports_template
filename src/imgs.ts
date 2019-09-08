@@ -2,12 +2,17 @@
 /// <reference path="imgs.d.ts"/>
 
 // The images to insert into reports page.
-import headerLevelLeftImg from './assets/headerImg1.png'
+import headerImage from './assets/image-2.jpg'
+import sectionImage1 from './assets/image-1.png'
 
 export default {
-  'header-level-left-img': {
+  'header-image': {
+    setAs: 'bg',
+    imagePath: headerImage
+  },
+  'section-image-1': {
     setAs: 'imgsrc',
-    imagePath: headerLevelLeftImg
+    imagePath: sectionImage1
   }
 }
 

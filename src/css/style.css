@@ -1,12 +1,23 @@
 /* Main CSS */
 .section {
   margin-left: 5em;
+  margin-right: 5em;
 }
 
 .sub-section {
-  margin-left: 10em;
+  margin-left: 7em;
 }
 
-.header-level-left-img {
-  max-width: 6em;
+.header-image {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-image > .container > h2,
+.header-image > .container > p {
+  color: white;
+}
+
+.section-image-1 {
+  max-width: 6rem;
 }
