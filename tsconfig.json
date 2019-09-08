@@ -3,6 +3,17 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "module": "es6",
+    /*
+      I don't know why a few of people
+      are still using Internet Explorer,
+      AND I'VE TO SUPPORT THOSE S**T.
+      If you are a customer that using
+      IE, please choose the BETTER
+      browser, like the latest version
+      of Chrome or Firefox. BTW, if you
+      are using Windows Vista, XP or older
+      systems, UPGRADE IT OR F**K OUT.
+    */
     "target": "es5",
     "allowJs": false
   }

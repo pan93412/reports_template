@@ -1,0 +1,5 @@
+{
+  "standard.autoFixOnSave": true,
+  "standard.trace.server": "messages",
+  "standard.usePackageJson": true
+}
