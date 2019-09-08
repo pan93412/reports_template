@@ -12,20 +12,21 @@ interface imageObject {
 
 function applyImgsToPage (imgObject: imageObject): void {
   for (const imgClass in imgObject) {
-    const elem: HTMLElement = document.querySelector('.' + imgClass)
-    const imgURL: string = imgObject[imgClass].imagePath
-    const setAs: string = imgObject[imgClass].setAs
+    const elems: NodeListOf<HTMLElement> = document.querySelectorAll('.' + imgClass)
+    const {imagePath, setAs} = {...imgObject[imgClass]}
 
-    switch (setAs) {
-      case 'imgsrc':
-        elem.setAttribute('src', imgURL)
-        break
-      case 'bg':
-        elem.style.setProperty('background-image', `url(${imgURL})`)
-        break
-      default:
-        throw new Error("ERROR: We don't support the such things like " + setAs)
-    }
+    elems.forEach(elem => {
+      switch (setAs) {
+        case 'imgsrc':
+          elem.setAttribute('src', imagePath)
+          break
+        case 'bg':
+          elem.style.setProperty('background-image', `url(${imagePath})`)
+          break
+        default:
+          throw new Error("ERROR: We don't support the such things like " + setAs)
+      }
+    })
   }
 }
 

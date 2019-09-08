@@ -1,16 +1,17 @@
 /* Main CSS */
 .section {
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .sub-section {
-  margin-left: 7em;
+  margin-left: 6em;
 }
 
 .header-image {
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-image > .container > h2,
@@ -19,5 +20,18 @@
 }
 
 .section-image-1 {
-  max-width: 6rem;
+  max-width: 8rem;
+}
+
+.card-image.for-describing {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+.card.for-image {
+  max-width: 15rem;
+  min-height: 15rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
 }

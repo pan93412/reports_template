@@ -10,6 +10,10 @@ export default {
     setAs: 'bg',
     imagePath: headerImage
   },
+  'example-image': {
+    setAs: 'imgsrc',
+    imagePath: headerImage
+  },
   'section-image-1': {
     setAs: 'imgsrc',
     imagePath: sectionImage1
