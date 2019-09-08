@@ -1,5 +1,6 @@
 {
-  "name": "reports",
+  "name": "report_template",
+  "description": "Template for reports.",
   "version": "1.0.0",
   "main": "index.js",
   "author": "pan93412 <pan93412@gmail.com>",
@@ -8,6 +9,7 @@
   "dependencies": {
     "@webpack-cli/init": "^0.2.2",
     "bulma": "^0.7.5",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "pug": "^2.0.4",
@@ -17,9 +19,9 @@
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8"
   },
-  "description": "My webpack project",
   "scripts": {
     "build": "webpack",
+    "build:prod": "webpack --mode=production",
     "start": "webpack-dev-server"
   },
   "devDependencies": {
